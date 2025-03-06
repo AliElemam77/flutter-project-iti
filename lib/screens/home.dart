@@ -36,7 +36,6 @@ class _HomeState extends State<Home> {
           children: [
             Expanded(
               flex: 1,
-
               child: Container(color: Colors.red, child: Column()),
             ),
             Expanded(
@@ -72,7 +71,7 @@ class _HomeState extends State<Home> {
                               child: Center(child: Text('three')),
                             ),
                           ),
-                         ],
+                        ],
                       ),
                     ],
                   ),
@@ -81,7 +80,6 @@ class _HomeState extends State<Home> {
             ),
             Expanded(
               flex: 1,
-
               child: Container(color: Colors.blue, child: Column()),
             ),
           ],
