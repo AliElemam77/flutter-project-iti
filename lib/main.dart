@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tests/screens/home.dart';
 import 'package:tests/screens/login_screen.dart';
+import 'package:tests/screens/messenger.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const LoginScreen(),
+      home: const Messenger(),
     );
   }
 }
