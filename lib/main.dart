@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tests/screens/home.dart';
+import 'package:tests/screens/ibm.dart';
 import 'package:tests/screens/login_screen.dart';
 import 'package:tests/screens/messenger.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const Messenger(),
+      home: IBMScreen(),
     );
   }
 }
