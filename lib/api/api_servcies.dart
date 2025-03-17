@@ -8,7 +8,7 @@ class ApiServcies {
     try {
       final response = await dio.get('https://dummyjson.com/products');
 
-      print("API Response: ${response.data}"); // ✅ طباعة البيانات للتأكد
+      print("API Response: ${response.data}");
 
       if (response.statusCode == 200) {
         List productsData = response.data['products'];

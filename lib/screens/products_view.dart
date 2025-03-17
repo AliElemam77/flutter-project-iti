@@ -23,7 +23,7 @@ class _ProductsViewState extends State<ProductsView> {
   Future<void> fetchProducts() async {
     try {
       final response = await apiServices.getProducts();
-      print("Fetched Products: $response"); // ✅ طباعة البيانات للتأكد
+      print("Fetched Products: $response");
       setState(() {
         products = response;
         isLoading = false;
@@ -42,9 +42,7 @@ class _ProductsViewState extends State<ProductsView> {
       appBar: AppBar(title: const Text('Products')),
       body:
           isLoading
-              ? const Center(
-                child: CircularProgressIndicator(),
-              ) // لو البيانات لسه بتيجي
+              ? const Center(child: CircularProgressIndicator())
               : ListView.builder(
                 itemCount: products.length,
                 itemBuilder: (context, index) {
