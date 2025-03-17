@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:tests/screens/home.dart';
-import 'package:tests/screens/ibm.dart';
 import 'package:tests/screens/login_screen.dart';
-import 'package:tests/screens/messenger.dart';
+import 'package:tests/screens/products_view.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: IBMScreen(),
+      home: LoginScreen(),
     );
   }
 }
